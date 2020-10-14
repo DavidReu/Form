@@ -10,9 +10,73 @@
 
 <body>
     <div>
+        <!--Title-->
         <header>
             <h1>EVENT REGISTRATION FORM</h1>
         </header>
+        <form action="">
+
+            <!--Name Section-->
+            <div>
+                <h3>Name</h3>
+                <div>
+                    <input type="text" name="firstname">
+                    <label for="firstname">First Name</label>
+                </div>
+                <div>
+                    <input type="text" name="lastname">
+                    <label for="firstname">Last Name</label>
+                </div>
+            </div>
+
+            <!--Company Section-->
+            <div>
+                <h3>Company</h3>
+                <input type="text">
+            </div>
+
+            <!--Email section-->
+            <div>
+                <h3>Email</h3>
+                <input type="email">
+            </div>
+
+            <!--Phone section-->
+            <div>
+                <h3>Phone</h3>
+                <div>
+                    <input type="number" name="area">
+                    <label for="area">Area Code</label>
+                </div>
+                <div>
+                    <input type="number" name="tel">
+                    <label for="number">Phone Number</label>
+                </div>
+            </div>
+
+            <!--Subject-->
+            <div>
+                <h3>Subject</h3>
+                <select name="subject" id="">
+                    <option value="">Choose option</option>
+                    <option value="#">1</option>
+                    <option value="#">2</option>
+                    <option value="#">3</option>
+                </select>
+            </div>
+
+            <!--Register-->
+            <div>
+                <h3>Are you an existing customer?</h3>
+                <div>
+                    <input type="radio" name="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="no">
+                    <label for="no">No</label>
+                </div>
+                <input type="submit" value="REGISTER">
+            </div>
+        </form>
     </div>
 </body>
 
