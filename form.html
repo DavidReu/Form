@@ -9,10 +9,84 @@
 </head>
 
 <body>
-    <div>
+    <div id="contain">
+        <!--Title-->
         <header>
             <h1>EVENT REGISTRATION FORM</h1>
         </header>
+        <form action="">
+
+            <!--Name Section-->
+            <div class="section test">
+                <h5>Name</h5>
+                <div class="fifty">
+                    <div class="column">
+                        <input class="champ" type="text" name="firstname">
+                        <label for="firstname">First Name</label>
+                    </div>
+                    <div class="column">
+                        <input class="champ" type="text" name="lastname">
+                        <label for="firstname">Last Name</label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Company Section-->
+            <div class="section">
+                <h5>Company</h5>
+                <input class="champ complete" type="text">
+            </div>
+
+            <!--Email section-->
+            <div class="section">
+                <h5 class="categorie">Email</h5>
+                <input class="champ complete" type="email">
+            </div>
+
+            <!--Phone section-->
+            <div class="section">
+                <h5>Phone</h5>
+                <div class="fifty">
+                    <div class="column area">
+                        <input class="champ" type="number" name="area">
+                        <label for="area">Area Code</label>
+                    </div>
+                    <div class="column number">
+                        <input class="champ" type="number" name="tel">
+                        <label for="number">Phone Number</label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Subject-->
+            <div class="section">
+                <h5>Subject</h5>
+                <select class="champ complete" name="subject" id="">
+                    <option value="">Choose option</option>
+                    <option value="#">1</option>
+                    <option value="#">2</option>
+                    <option value="#">3</option>
+                </select>
+            </div>
+
+            <!--Register-->
+            <div class="register">
+                <div>
+                    <div class="question">Are you an existing customer?</div>
+                    <div class="yes-no">
+                        <div class="radio-item">
+                            <input type="radio" name="yes">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" name="no">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                </div>
+                <input id="send" type="submit" value="REGISTER">
+            </div>
+        </form>
     </div>
 </body>
 
