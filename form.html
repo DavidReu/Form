@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div>
+    <div id="contain">
         <!--Title-->
         <header>
             <h1>EVENT REGISTRATION FORM</h1>
@@ -17,47 +17,51 @@
         <form action="">
 
             <!--Name Section-->
-            <div>
-                <h3>Name</h3>
-                <div>
-                    <input type="text" name="firstname">
-                    <label for="firstname">First Name</label>
-                </div>
-                <div>
-                    <input type="text" name="lastname">
-                    <label for="firstname">Last Name</label>
+            <div class="section test">
+                <h5>Name</h5>
+                <div class="fifty">
+                    <div class="column">
+                        <input class="champ" type="text" name="firstname">
+                        <label for="firstname">First Name</label>
+                    </div>
+                    <div class="column">
+                        <input class="champ" type="text" name="lastname">
+                        <label for="firstname">Last Name</label>
+                    </div>
                 </div>
             </div>
 
             <!--Company Section-->
-            <div>
-                <h3>Company</h3>
-                <input type="text">
+            <div class="section">
+                <h5>Company</h5>
+                <input class="champ complete" type="text">
             </div>
 
             <!--Email section-->
-            <div>
-                <h3>Email</h3>
-                <input type="email">
+            <div class="section">
+                <h5 class="categorie">Email</h5>
+                <input class="champ complete" type="email">
             </div>
 
             <!--Phone section-->
-            <div>
-                <h3>Phone</h3>
-                <div>
-                    <input type="number" name="area">
-                    <label for="area">Area Code</label>
-                </div>
-                <div>
-                    <input type="number" name="tel">
-                    <label for="number">Phone Number</label>
+            <div class="section">
+                <h5>Phone</h5>
+                <div class="fifty">
+                    <div class="column area">
+                        <input class="champ" type="number" name="area">
+                        <label for="area">Area Code</label>
+                    </div>
+                    <div class="column number">
+                        <input class="champ" type="number" name="tel">
+                        <label for="number">Phone Number</label>
+                    </div>
                 </div>
             </div>
 
             <!--Subject-->
-            <div>
-                <h3>Subject</h3>
-                <select name="subject" id="">
+            <div class="section">
+                <h5>Subject</h5>
+                <select class="champ complete" name="subject" id="">
                     <option value="">Choose option</option>
                     <option value="#">1</option>
                     <option value="#">2</option>
@@ -66,15 +70,21 @@
             </div>
 
             <!--Register-->
-            <div>
-                <h3>Are you an existing customer?</h3>
+            <div class="register">
                 <div>
-                    <input type="radio" name="yes">
-                    <label for="yes">Yes</label>
-                    <input type="radio" name="no">
-                    <label for="no">No</label>
+                    <div class="question">Are you an existing customer?</div>
+                    <div class="yes-no">
+                        <div>
+                            <input type="radio" name="yes">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="no">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
                 </div>
-                <input type="submit" value="REGISTER">
+                <input id="send" type="submit" value="REGISTER">
             </div>
         </form>
     </div>

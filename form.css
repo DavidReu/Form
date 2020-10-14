@@ -1,0 +1,146 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: linear-gradient(to bottom left, #B651F7,#42AEEB);
+    font-family: sans-serif;
+    width: 95%;
+    height: 95%;
+    background-size: contain;
+    margin: 0;
+    padding-top: 25px;
+}
+
+#contain {
+    width: 37%;
+    height: 70%;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+}
+
+header {
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 9px;
+    border-radius: 10px 10px 0 0;
+    padding-top: 12px;
+    text-align: center;
+}
+
+form {
+    margin-top: 40px;
+    padding-bottom: 0;
+}
+
+label {
+    font-size: 10px;
+    color: #9A9A9A;
+}
+
+select {
+    color: #575757;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.section {
+    width: 100%;
+    margin-top: 15px;
+}
+
+h5 {
+    width: 25%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.categorie {
+    width: 25%;
+    display: inline-block;
+}
+
+.champ {
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.complete {
+    width: 58%;
+    margin-right: 45px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 40%;
+}
+
+.fifty {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 30px;
+}
+
+.area {
+    width: 25%;
+}
+
+.number {
+    width: 55%;
+}
+
+.register {
+    margin-top: 40px;
+    height: 100px;
+    padding-left: 30px;
+}
+
+.question {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.yes-no {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.yes-no label{
+    color: #575757;
+    font-size: 11px;
+}
+.yes-no div{
+    display: flex;
+    align-items: center;
+}
+
+#send {
+    border-radius: 4px;
+    background-color: #EE4758;
+    height: 30px;
+    width: 100px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
