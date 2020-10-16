@@ -21,11 +21,13 @@
                     <h5 class="categorie name">Name</h5>
                     <div class="fifty">
                         <div class="column">
-                            <input class="champ" type="text" name="firstname">
+                            <input class="champ" type="text" name="firstname" required autocomplete="given-name"
+                                placeholder="Jhon" pattern="[a-zA-ZÀ-ÿ]{2,}">
                             <label for="firstname">First Name</label>
                         </div>
                         <div class="column">
-                            <input class="champ" type="text" name="lastname">
+                            <input class="champ" type="text" name="lastname" required autocomplete="family-name"
+                                placeholder="Smith" pattern="[a-zA-ZÀ-ÿ]{2,}">
                             <label for="firstname">Last Name</label>
                         </div>
                     </div>
@@ -34,13 +36,14 @@
                 <!--Company Section-->
                 <div class="section">
                     <h5 class="categorie company">Company</h5>
-                    <input class="champ complete" type="text">
+                    <input class="champ complete" type="text" required>
                 </div>
 
                 <!--Email section-->
                 <div class="section">
                     <h5 class="categorie email">Email </h5>
-                    <input class="champ complete" type="email">
+                    <input class="champ complete" type="email" required autocomplete="impp" placeholder="jhon@smith.com"
+                        pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})">
                 </div>
 
                 <!--Phone section-->
@@ -48,11 +51,14 @@
                     <h5 class="categorie phone">Phone</h5>
                     <div class="fifty">
                         <div class="column area">
-                            <input class="champ" type="number" name="area">
+                            <input class="champ" type="text" name="area" required autocomplete="tel-country-code"
+                                pattern="[0-9]{1,}|(1\-[0-9])">
                             <label for="area">Area Code</label>
                         </div>
                         <div class="column number">
-                            <input class="champ" type="number" name="tel">
+                            <input class="champ" type="text" name="tel" required autocomplete="tel-national"
+                                placeholder="00-11-22-33-44"
+                                pattern="[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}">
                             <label for="number">Phone Number</label>
                         </div>
                     </div>

@@ -211,6 +211,15 @@ input[type='radio']:checked:after {
     border: 2px solid E5E5E5;
 }
 
+input:required:valid {
+    box-shadow: green 0 0 5px 2px;
+}
+
+input:focus:invalid {
+    outline: none;
+    box-shadow: red 0 0 5px 2px;
+}
+
 @media screen and (max-width: 900px)
 {
     html{
